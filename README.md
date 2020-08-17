@@ -1,6 +1,6 @@
-# Base MM Create React App Template
+# MM Create React App Template
 
-> cra-template-mm-base
+> cra-template-mm
 
 ---
 
@@ -11,13 +11,13 @@ This template is designed to be used together with our [custom react-scripts](ht
 > npx
 
 ```shell
-npx create-react-app my-app --scripts-version @psimk/react-scripts --template mm-base
+npx create-react-app my-app --scripts-version @psimk/react-scripts --template mm
 ```
 
 > yarn
 
 ```shell
-yarn create create-react-app my-app --scripts-version @psimk/react-scripts --template mm-base
+yarn create create-react-app my-app --scripts-version @psimk/react-scripts --template mm
 ```
 
 ## Differences to CRA
@@ -32,6 +32,17 @@ yarn create create-react-app my-app --scripts-version @psimk/react-scripts --tem
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [MediaMonks eslint](https://github.com/mediamonks/frontend-coding-standards) | The existing eslint setup was changed with the MM version, in order to maintain the same standards across different projects and to make it easier to set up new ones. |
 | `start` renamed to `dev`                                                     | Again, this change was made in order to maintain cohesion between all of our projects.                                                                                 |
+
+## Contributing
+
+This repository is "forked" from [cra-template-mm-base](https://github.com/psimk/cra-template-mm-base) and the base template contains the essential barebones of the template also used here. In order to sync changes from the base, make sure to add it as a remote.
+
+```shell
+# clone
+git clone git@github.com:psimk/cra-template-mm.git
+# add upstream
+git remote add upstream git@github.com:psimk/cra-template-mm-base.git
+```
 
 ## License
 
