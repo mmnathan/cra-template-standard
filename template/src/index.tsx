@@ -1,11 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { configure } from 'mobx';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { GlobalStoreProvider } from './GlobalStore';
+import GlobalStyle from './GlobalStyle';
+import theme from './config/theme';
+
+/** SETUP */
+
+configure({
+  // restricts observable value updating only to actions
+  enforceActions: 'observed',
+});
+
+/** RENDER */
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStoreProvider>
+          <>
+            <GlobalStyle />
+            <App />
+          </>
+        </GlobalStoreProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   // eslint-disable-next-line unicorn/prefer-query-selector
   document.getElementById('root'),

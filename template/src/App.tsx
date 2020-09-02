@@ -1,13 +1,12 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
+import Routes from './pages/Routes';
+import Navigation from './components/Navigation';
 
-const App: FunctionComponent = () => {
+export default function App(): JSX.Element {
   return (
-    <div>
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-    </div>
+    <>
+      <Navigation />
+      <Routes />
+    </>
   );
-};
-
-export default App;
+}
