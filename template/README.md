@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app),
-using the [MM base template](https://github.com/psimk/cra-template-mm-base)
+using the [MM template](https://github.com/psimk/cra-template-mm)
 
 ## Available Scripts
 
