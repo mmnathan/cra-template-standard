@@ -11,13 +11,13 @@ This template is designed to be used together with our [custom react-scripts](ht
 > npx
 
 ```shell
-npx create-react-app my-app --scripts-version @mediamonks/react-scripts --template mm
+npx create-react-app my-app --scripts-version @mediamonks/react-scripts --template @mediamonks/standard
 ```
 
 > yarn
 
 ```shell
-yarn create create-react-app my-app --scripts-version @mediamonks/react-scripts --template mm
+yarn create create-react-app my-app --scripts-version @mediamonks/react-scripts --template @mediamonks/standard
 ```
 
 ## Differences to CRA
@@ -35,13 +35,13 @@ yarn create create-react-app my-app --scripts-version @mediamonks/react-scripts 
 
 ## Contributing
 
-This repository is "forked" from [cra-template-mm-base](https://github.com/mediamonks/cra-template-mm-base) and the base template contains the essential barebones of the template also used here. In order to sync changes from the base, make sure to add it as a remote.
+This repository is "forked" from [cra-template](https://github.com/mediamonks/cra-template) and the base template contains the essential barebones of the template also used here. In order to sync changes from the base, make sure to add it as a remote.
 
 ```shell
 # clone
 git clone git@github.com:mediamonks/cra-template-standard.git
 # add upstream
-git remote add upstream git@github.com:mediamonks/cra-template-mm-base.git
+git remote add upstream git@github.com:mediamonks/cra-template.git
 ```
 
 ## License
