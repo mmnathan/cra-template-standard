@@ -1,6 +1,6 @@
 # MM Create React App Template
 
-> cra-template-mm
+> cra-template-standard
 
 ---
 
@@ -39,7 +39,7 @@ This repository is "forked" from [cra-template-mm-base](https://github.com/media
 
 ```shell
 # clone
-git clone git@github.com:mediamonks/cra-template-mm.git
+git clone git@github.com:mediamonks/cra-template-standard.git
 # add upstream
 git remote add upstream git@github.com:mediamonks/cra-template-mm-base.git
 ```
