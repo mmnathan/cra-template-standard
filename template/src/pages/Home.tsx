@@ -1,19 +1,10 @@
 import React from 'react';
-import { observer } from 'mobx-react-lite';
-import { useGlobalStore } from '../GlobalStore';
+import Counter from '../components/Counter';
 
-export default observer(function Home() {
-  const store = useGlobalStore();
-
+export default function Home(): JSX.Element {
   return (
     <div>
-      <button type="button" onClick={store.increment}>
-        Increment
-      </button>
-      <span>{store.count}</span>
-      <button type="button" onClick={store.decrement}>
-        Decrement
-      </button>
+      <Counter />
     </div>
   );
-});
+}

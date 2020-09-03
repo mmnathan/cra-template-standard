@@ -1,15 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
-import About from './About';
+import Animation from './Animation';
 
 export default function Routes(): JSX.Element {
   return (
-    <main>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
-    </main>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/animation" component={Animation} />
+    </Switch>
   );
 }
