@@ -21,5 +21,6 @@ module.exports = {
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
+    'react/jsx-props-no-spreading': 'off',
   },
 };
