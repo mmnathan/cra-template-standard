@@ -6,18 +6,18 @@
 
 ## Usage
 
-This template is designed to be used together with our [custom react-scripts](https://github.com/psimk/create-react-app).
+This template is designed to be used together with our [custom react-scripts](https://github.com/mediamonks/create-react-app).
 
 > npx
 
 ```shell
-npx create-react-app my-app --scripts-version @psimk/react-scripts --template mm
+npx create-react-app my-app --scripts-version @mediamonks/react-scripts --template mm
 ```
 
 > yarn
 
 ```shell
-yarn create create-react-app my-app --scripts-version @psimk/react-scripts --template mm
+yarn create create-react-app my-app --scripts-version @mediamonks/react-scripts --template mm
 ```
 
 ## Differences to CRA
@@ -35,13 +35,13 @@ yarn create create-react-app my-app --scripts-version @psimk/react-scripts --tem
 
 ## Contributing
 
-This repository is "forked" from [cra-template-mm-base](https://github.com/psimk/cra-template-mm-base) and the base template contains the essential barebones of the template also used here. In order to sync changes from the base, make sure to add it as a remote.
+This repository is "forked" from [cra-template-mm-base](https://github.com/mediamonks/cra-template-mm-base) and the base template contains the essential barebones of the template also used here. In order to sync changes from the base, make sure to add it as a remote.
 
 ```shell
 # clone
-git clone git@github.com:psimk/cra-template-mm.git
+git clone git@github.com:mediamonks/cra-template-mm.git
 # add upstream
-git remote add upstream git@github.com:psimk/cra-template-mm-base.git
+git remote add upstream git@github.com:mediamonks/cra-template-mm-base.git
 ```
 
 ## License

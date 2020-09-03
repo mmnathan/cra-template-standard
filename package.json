@@ -11,14 +11,14 @@
   "description": "The MM template for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psimk/cra-template-mm.git"
+    "url": "https://github.com/mediamonks/cra-template-mm.git"
   },
   "license": "MIT",
   "engines": {
     "node": ">=12"
   },
   "bugs": {
-    "url": "https://github.com/psimk/cra-template-mm/issues"
+    "url": "https://github.com/mediamonks/cra-template-mm/issues"
   },
   "main": "template.json",
   "files": [
