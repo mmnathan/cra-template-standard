@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
 /**
- * @param fn - function, which is triggered on unmount.
+ * @param effect - function, which is triggered on unmount.
  */
-const useUnmount = (fn: () => void): void => {
-  useEffect(() => fn, []);
+const useUnmount = (effect: () => void): void => {
+  useEffect(() => effect, []);
 };
 
 export default useUnmount;
