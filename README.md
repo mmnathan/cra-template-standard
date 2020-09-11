@@ -1,7 +1,5 @@
 # MM Create React App Template
 
-> cra-template-standard
-
 ---
 
 ## Usage
