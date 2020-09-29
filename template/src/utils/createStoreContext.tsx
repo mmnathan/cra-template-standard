@@ -5,7 +5,7 @@ import React, {
   Context,
   useContext,
 } from 'react';
-import useStoreFactory from '../hooks/useStoreFactory';
+import useStoreFactory, { Store } from '../hooks/useStoreFactory';
 
 /**
  * Creates a context for the store created by the passed `storeFactory`.
@@ -14,11 +14,11 @@ import useStoreFactory from '../hooks/useStoreFactory';
  * @param name - name of the store
  * @param storeFactory - a function that returns an object representing the store
  */
-const createStoreContext = <TStore extends Record<string, unknown>>(
+const createStoreContext = <T extends Store>(
   name: string,
-  storeFactory: () => TStore,
-): [FunctionComponent<unknown>, () => TStore, Context<TStore>] => {
-  const context = createContext<TStore>({} as TStore); // the initial value is only to satisfy TS and won't be used
+  storeFactory: () => T,
+): [FunctionComponent<unknown>, () => T, Context<T>] => {
+  const context = createContext<T>({} as T); // the initial value is only to satisfy TS and won't be used
 
   /**
    * Initializes and contains the context for the `TStore`.

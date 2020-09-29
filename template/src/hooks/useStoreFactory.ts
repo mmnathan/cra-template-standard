@@ -2,6 +2,8 @@ import { action, observable, runInAction } from 'mobx';
 import { useState } from 'react';
 import { isPlainObject } from 'isntnt';
 
+export type Store = Record<string, unknown>;
+
 /**
  * Creates an observable mobx store from the passed factory function.
  *
@@ -11,9 +13,7 @@ import { isPlainObject } from 'isntnt';
  *
  * @param storeFactory - a function that returns an object representing the store
  */
-const useStoreFactory = <TStore extends Record<string, unknown>>(
-  storeFactory: () => TStore,
-): TStore => {
+const useStoreFactory = <T extends Store>(storeFactory: () => T): T => {
   const [store] = useState(() => {
     const local = observable(storeFactory());
     if (isPlainObject(local)) {
